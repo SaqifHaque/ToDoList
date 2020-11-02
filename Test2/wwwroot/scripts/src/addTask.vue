@@ -8,7 +8,7 @@
         id="newTodo"
         value=""
         />
-        <button v-on:click="addTodo()" type="submit" name="button">Add</button>
+        <button v-on:click="addTodo()" type="button" name="button">Add</button>
     </form> 
 </template>
 <script>
@@ -21,11 +21,12 @@ export default {
   },
    methods: {
        addTodo() {
-        fetch("https://localhost:44398/api/ToDo", {
+        fetch("/api/ToDo", {
                 method: "POST",
-                body: JSON.stringify({ taskName: this.newTodo }),
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ taskName: this.newTodo })
             })
-            .then(() => {})
+            .then(response => response.json())
         this.newTodo = '';
     },
 }

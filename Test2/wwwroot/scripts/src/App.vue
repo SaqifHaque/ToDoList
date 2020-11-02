@@ -6,7 +6,7 @@
         <Task :todo="todo"></Task>
       </li>
     </ul>
-    <h1>hello</h1>
+    <h1>hi</h1>
   </div>
 </template>
 <script>

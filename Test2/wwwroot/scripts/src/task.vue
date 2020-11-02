@@ -7,10 +7,10 @@
     />
     <!-- <span>{{ todo.taskName }}</span> -->
     <input type="text" name="task" v-model="todo.taskName" />
-    <button v-on:click="removeTodo(todo)" type="button" name="button">
+    <button v-on:click="removeToDo(todo)" type="button" name="button">
       Remove
     </button>
-    <button v-on:click="editTodo(todo)" type="button" name="button">Edit</button>
+    <button v-on:click="editToDo(todo)" type="button" name="button">Edit</button>
   </div>
 </template>
 <script>
@@ -23,8 +23,8 @@ export default {
     };
   },
   methods: {
-    removeTodo(todo) {
-      fetch("https://localhost:44398/api/ToDo/" + todo.id, {
+    removeToDo(todo) {
+      fetch("/api/ToDo/" + todo.id, {
         method: "DELETE",
       }).then(() => {
         const todoIndex = this.todos.indexOf(todo);
@@ -32,26 +32,28 @@ export default {
       });
     },
     updateToDo(todo) {
-        fetch("https://localhost:44398/api/ToDo/" + todo.id, {
+        fetch("/api/ToDo/" + todo.id, {
             method: "PUT",
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 id: todo.id,
                 taskName: todo.taskName,
-                status: !todo.status
-            }),
+                status: !todo.status,
+            })
         })
-        .then(() => {});
+        .then(response => response.json())
       },
       editToDo(todo) {
-          fetch("https://localhost:44398/api/ToDo/" + todo.id, {
+          fetch("/api/ToDo/" + todo.id, {
               method: "PUT",
+              headers: { "Content-Type": "application/json" },
               body: JSON.stringify({
                   id: todo.id,
                   taskName: todo.taskName,
-                  status: todo.status
-              }),
+                  status: todo.status,
+              })
           })
-              .then(() => { });
+              .then(response => response.json())
       },
 
   },

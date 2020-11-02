@@ -20,91 +20,7 @@
 /*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=7ba5bd90& */ \"./src/App.vue?vue&type=template&id=7ba5bd90&\");\n/* harmony import */ var _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js& */ \"./src/App.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(\n  _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,\n  _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.render,\n  _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/App.vue\"\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);\n\n//# sourceURL=webpack://webpacktest/./src/App.vue?");
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _task_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./task.vue */ \"./src/task.vue\");\n/* harmony import */ var _addTask_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./addTask.vue */ \"./src/addTask.vue\");\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\r\n\r\n\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n  components: { Task: _task_vue__WEBPACK_IMPORTED_MODULE_0__.default, Create: _addTask_vue__WEBPACK_IMPORTED_MODULE_1__.default },\r\n  data() {\r\n    return {\r\n      todos: [],\r\n    };\r\n  },\r\n  mounted() {\r\n    fetch(\"/api/ToDo\", {\r\n      method: \"GET\",\r\n    })\r\n      .then((response) => response.json())\r\n      .then((data) => {\r\n        this.todos = data;\r\n      })\r\n      .catch(() =>\r\n        console.log(\"Can’t access \" + url + \" response. Blocked by browser?\")\r\n      );\r\n  },\r\n});\r\n\n\n//# sourceURL=webpack://webpacktest/./src/App.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
-
-/***/ }),
-
-/***/ "./src/addTask.vue":
-/*!*************************!*\
-  !*** ./src/addTask.vue ***!
-  \*************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _addTask_vue_vue_type_template_id_01761206___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addTask.vue?vue&type=template&id=01761206& */ \"./src/addTask.vue?vue&type=template&id=01761206&\");\n/* harmony import */ var _addTask_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./addTask.vue?vue&type=script&lang=js& */ \"./src/addTask.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(\n  _addTask_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,\n  _addTask_vue_vue_type_template_id_01761206___WEBPACK_IMPORTED_MODULE_0__.render,\n  _addTask_vue_vue_type_template_id_01761206___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/addTask.vue\"\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);\n\n//# sourceURL=webpack://webpacktest/./src/addTask.vue?");
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n    data() {\r\n    return {\r\n      newTodo: \"\",\r\n      todos: [],\r\n    };\r\n  },\r\n   methods: {\r\n       addTodo() {\r\n        fetch(\"/api/ToDo\", {\r\n                method: \"POST\",\r\n                headers: { \"Content-Type\": \"application/json\" },\r\n                body: JSON.stringify({ taskName: this.newTodo })\r\n            })\r\n            .then(response => response.json())\r\n        this.newTodo = '';\r\n    },\r\n}\r\n});\r\n\n\n//# sourceURL=webpack://webpacktest/./src/addTask.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
-
-/***/ }),
-
-/***/ "./src/task.vue":
-/*!**********************!*\
-  !*** ./src/task.vue ***!
-  \**********************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _task_vue_vue_type_template_id_242eec5e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./task.vue?vue&type=template&id=242eec5e& */ \"./src/task.vue?vue&type=template&id=242eec5e&\");\n/* harmony import */ var _task_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.vue?vue&type=script&lang=js& */ \"./src/task.vue?vue&type=script&lang=js&\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\n\n\n\n\n/* normalize component */\n\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(\n  _task_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,\n  _task_vue_vue_type_template_id_242eec5e___WEBPACK_IMPORTED_MODULE_0__.render,\n  _task_vue_vue_type_template_id_242eec5e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/task.vue\"\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);\n\n//# sourceURL=webpack://webpacktest/./src/task.vue?");
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\r\n  props: [\"todo\"],\r\n  data() {\r\n    return {\r\n        newTodo: \"\",\r\n      todos: [],\r\n    };\r\n  },\r\n  methods: {\r\n    removeToDo(todo) {\r\n      fetch(\"/api/ToDo/\" + todo.id, {\r\n        method: \"DELETE\",\r\n      }).then(() => {\r\n        const todoIndex = this.todos.indexOf(todo);\r\n        this.todos.splice(todoIndex, 1);\r\n      });\r\n    },\r\n    updateToDo(todo) {\r\n        fetch(\"/api/ToDo/\" + todo.id, {\r\n            method: \"PUT\",\r\n            headers: { \"Content-Type\": \"application/json\" },\r\n            body: JSON.stringify({\r\n                id: todo.id,\r\n                taskName: todo.taskName,\r\n                status: !todo.status,\r\n            })\r\n        })\r\n        .then(response => response.json())\r\n      },\r\n      editToDo(todo) {\r\n          fetch(\"/api/ToDo/\" + todo.id, {\r\n              method: \"PUT\",\r\n              headers: { \"Content-Type\": \"application/json\" },\r\n              body: JSON.stringify({\r\n                  id: todo.id,\r\n                  taskName: todo.taskName,\r\n                  status: todo.status,\r\n              })\r\n          })\r\n              .then(response => response.json())\r\n      },\r\n\r\n  },\r\n});\r\n\n\n//# sourceURL=webpack://webpacktest/./src/task.vue?./node_modules/vue-loader/lib/index.js??vue-loader-options");
-
-/***/ }),
-
-/***/ "./src/App.vue?vue&type=script&lang=js&":
-/*!**********************************************!*\
-  !*** ./src/App.vue?vue&type=script&lang=js& ***!
-  \**********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/index.js??vue-loader-options!./App.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=script&lang=js&\");\n /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); \n\n//# sourceURL=webpack://webpacktest/./src/App.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=7ba5bd90& */ \"./src/App.vue?vue&type=template&id=7ba5bd90&\");\n/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ \"./node_modules/vue-loader/lib/runtime/componentNormalizer.js\");\n\nvar script = {}\n\n\n/* normalize component */\n\nvar component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__.default)(\n  script,\n  _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.render,\n  _App_vue_vue_type_template_id_7ba5bd90___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/App.vue\"\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);\n\n//# sourceURL=webpack://webpacktest/./src/App.vue?");
 
 /***/ }),
 
@@ -123,64 +39,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/addTask.vue?vue&type=script&lang=js&":
-/*!**************************************************!*\
-  !*** ./src/addTask.vue?vue&type=script&lang=js& ***!
-  \**************************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_addTask_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/index.js??vue-loader-options!./addTask.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=script&lang=js&\");\n /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_vue_loader_lib_index_js_vue_loader_options_addTask_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); \n\n//# sourceURL=webpack://webpacktest/./src/addTask.vue?");
-
-/***/ }),
-
-/***/ "./src/addTask.vue?vue&type=template&id=01761206&":
-/*!********************************************************!*\
-  !*** ./src/addTask.vue?vue&type=template&id=01761206& ***!
-  \********************************************************/
-/*! namespace exports */
-/*! export render [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=template&id=01761206& .render */
-/*! export staticRenderFns [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=template&id=01761206& .staticRenderFns */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_addTask_vue_vue_type_template_id_01761206___WEBPACK_IMPORTED_MODULE_0__.render,\n/* harmony export */   \"staticRenderFns\": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_addTask_vue_vue_type_template_id_01761206___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_addTask_vue_vue_type_template_id_01761206___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./addTask.vue?vue&type=template&id=01761206& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=template&id=01761206&\");\n\n\n//# sourceURL=webpack://webpacktest/./src/addTask.vue?");
-
-/***/ }),
-
-/***/ "./src/task.vue?vue&type=script&lang=js&":
-/*!***********************************************!*\
-  !*** ./src/task.vue?vue&type=script&lang=js& ***!
-  \***********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_index_js_vue_loader_options_task_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/index.js??vue-loader-options!./task.vue?vue&type=script&lang=js& */ \"./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=script&lang=js&\");\n /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_vue_loader_lib_index_js_vue_loader_options_task_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); \n\n//# sourceURL=webpack://webpacktest/./src/task.vue?");
-
-/***/ }),
-
-/***/ "./src/task.vue?vue&type=template&id=242eec5e&":
-/*!*****************************************************!*\
-  !*** ./src/task.vue?vue&type=template&id=242eec5e& ***!
-  \*****************************************************/
-/*! namespace exports */
-/*! export render [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=template&id=242eec5e& .render */
-/*! export staticRenderFns [provided] [no usage info] [missing usage info prevents renaming] -> ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=template&id=242eec5e& .staticRenderFns */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.d, __webpack_require__.r, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_task_vue_vue_type_template_id_242eec5e___WEBPACK_IMPORTED_MODULE_0__.render,\n/* harmony export */   \"staticRenderFns\": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_task_vue_vue_type_template_id_242eec5e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_task_vue_vue_type_template_id_242eec5e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../node_modules/vue-loader/lib/index.js??vue-loader-options!./task.vue?vue&type=template&id=242eec5e& */ \"./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=template&id=242eec5e&\");\n\n\n//# sourceURL=webpack://webpacktest/./src/task.vue?");
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90&":
 /*!*******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/App.vue?vue&type=template&id=7ba5bd90& ***!
@@ -192,37 +50,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"div\",\n    [\n      _c(\"Create\"),\n      _vm._v(\" \"),\n      _c(\n        \"ul\",\n        _vm._l(_vm.todos, function(todo) {\n          return _c(\"li\", [_c(\"Task\", { attrs: { todo: todo } })], 1)\n        }),\n        0\n      ),\n      _vm._v(\" \"),\n      _c(\"h1\", [_vm._v(\"hi\")])\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://webpacktest/./src/App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=template&id=01761206&":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/addTask.vue?vue&type=template&id=01761206& ***!
-  \***********************************************************************************************************************************************************************************************/
-/*! namespace exports */
-/*! export render [provided] [no usage info] [missing usage info prevents renaming] */
-/*! export staticRenderFns [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    \"form\",\n    {\n      on: {\n        submit: function($event) {\n          $event.preventDefault()\n          return _vm.addTodo($event)\n        }\n      }\n    },\n    [\n      _c(\"label\", { attrs: { for: \"newTodo\" } }, [_vm._v(\"Add Task\")]),\n      _vm._v(\" \"),\n      _c(\"input\", {\n        directives: [\n          {\n            name: \"model\",\n            rawName: \"v-model\",\n            value: _vm.newTodo,\n            expression: \"newTodo\"\n          }\n        ],\n        attrs: { type: \"text\", name: \"newTodo\", id: \"newTodo\", value: \"\" },\n        domProps: { value: _vm.newTodo },\n        on: {\n          input: function($event) {\n            if ($event.target.composing) {\n              return\n            }\n            _vm.newTodo = $event.target.value\n          }\n        }\n      }),\n      _vm._v(\" \"),\n      _c(\n        \"button\",\n        {\n          attrs: { type: \"button\", name: \"button\" },\n          on: {\n            click: function($event) {\n              return _vm.addTodo()\n            }\n          }\n        },\n        [_vm._v(\"Add\")]\n      )\n    ]\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://webpacktest/./src/addTask.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=template&id=242eec5e&":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/task.vue?vue&type=template&id=242eec5e& ***!
-  \********************************************************************************************************************************************************************************************/
-/*! namespace exports */
-/*! export render [provided] [no usage info] [missing usage info prevents renaming] */
-/*! export staticRenderFns [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", [\n    _c(\"input\", {\n      directives: [\n        {\n          name: \"model\",\n          rawName: \"v-model\",\n          value: _vm.todo.status,\n          expression: \"todo.status\"\n        }\n      ],\n      attrs: { type: \"checkbox\" },\n      domProps: {\n        checked: Array.isArray(_vm.todo.status)\n          ? _vm._i(_vm.todo.status, null) > -1\n          : _vm.todo.status\n      },\n      on: {\n        click: function($event) {\n          return _vm.updateToDo(_vm.todo)\n        },\n        change: function($event) {\n          var $$a = _vm.todo.status,\n            $$el = $event.target,\n            $$c = $$el.checked ? true : false\n          if (Array.isArray($$a)) {\n            var $$v = null,\n              $$i = _vm._i($$a, $$v)\n            if ($$el.checked) {\n              $$i < 0 && _vm.$set(_vm.todo, \"status\", $$a.concat([$$v]))\n            } else {\n              $$i > -1 &&\n                _vm.$set(\n                  _vm.todo,\n                  \"status\",\n                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))\n                )\n            }\n          } else {\n            _vm.$set(_vm.todo, \"status\", $$c)\n          }\n        }\n      }\n    }),\n    _vm._v(\" \"),\n    _c(\"input\", {\n      directives: [\n        {\n          name: \"model\",\n          rawName: \"v-model\",\n          value: _vm.todo.taskName,\n          expression: \"todo.taskName\"\n        }\n      ],\n      attrs: { type: \"text\", name: \"task\" },\n      domProps: { value: _vm.todo.taskName },\n      on: {\n        input: function($event) {\n          if ($event.target.composing) {\n            return\n          }\n          _vm.$set(_vm.todo, \"taskName\", $event.target.value)\n        }\n      }\n    }),\n    _vm._v(\" \"),\n    _c(\n      \"button\",\n      {\n        attrs: { type: \"button\", name: \"button\" },\n        on: {\n          click: function($event) {\n            return _vm.removeToDo(_vm.todo)\n          }\n        }\n      },\n      [_vm._v(\"\\n    Remove\\n  \")]\n    ),\n    _vm._v(\" \"),\n    _c(\n      \"button\",\n      {\n        attrs: { type: \"button\", name: \"button\" },\n        on: {\n          click: function($event) {\n            return _vm.editToDo(_vm.todo)\n          }\n        }\n      },\n      [_vm._v(\"Edit\")]\n    )\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://webpacktest/./src/task.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => /* binding */ render,\n/* harmony export */   \"staticRenderFns\": () => /* binding */ staticRenderFns\n/* harmony export */ });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm._m(0)\n}\nvar staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c(\"div\", [_c(\"h1\", [_vm._v(\"Hello World!\")])])\n  }\n]\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack://webpacktest/./src/App.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options");
 
 /***/ }),
 
@@ -263,7 +91,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\r\n\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_1__.default({\r\n    el: '#app',\r\n    render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_0__.default)\r\n})\n\n//# sourceURL=webpack://webpacktest/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm.js\");\n/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue */ \"./src/App.vue\");\n\r\n\r\nnew vue__WEBPACK_IMPORTED_MODULE_1__.default({\r\n    el: '#app',\r\n    render: h => h(_App_vue__WEBPACK_IMPORTED_MODULE_0__.default)\r\n})\n\n//# sourceURL=webpack://webpacktest/./src/app.js?");
 
 /***/ })
 
