@@ -49,7 +49,7 @@ namespace Test2.Controllers
       
 
         [HttpPut("{id}")]
-        public IActionResult Put([FromBody] ToDoTask task)
+        public IActionResult Put(int id, [FromBody] ToDoTask task)
         {
             context.Entry(task).State = EntityState.Modified;
             context.SaveChanges();

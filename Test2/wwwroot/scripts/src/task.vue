@@ -10,7 +10,7 @@
     <button v-on:click="removeTodo(todo)" type="button" name="button">
       Remove
     </button>
-    <button type="button" name="button">Edit</button>
+    <button v-on:click="editTodo(todo)" type="button" name="button">Edit</button>
   </div>
 </template>
 <script>
@@ -18,7 +18,7 @@ export default {
   props: ["todo"],
   data() {
     return {
-      newTodo: "",
+        newTodo: "",
       todos: [],
     };
   },
@@ -32,12 +32,28 @@ export default {
       });
     },
     updateToDo(todo) {
-      axios
-        .put("/api/ToDO/" + todo.id, {
-          status: !todo.status,
+        fetch("https://localhost:44398/api/ToDo/" + todo.id, {
+            method: "PUT",
+            body: JSON.stringify({
+                id: todo.id,
+                taskName: todo.taskName,
+                status: !todo.status
+            }),
         })
         .then(() => {});
-    },
+      },
+      editToDo(todo) {
+          fetch("https://localhost:44398/api/ToDo/" + todo.id, {
+              method: "PUT",
+              body: JSON.stringify({
+                  id: todo.id,
+                  taskName: todo.taskName,
+                  status: todo.status
+              }),
+          })
+              .then(() => { });
+      },
+
   },
 };
 </script>
